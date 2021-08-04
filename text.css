@@ -1,0 +1,45 @@
+
+
+html{
+  background-color: #272b35;
+}
+
+body {
+  margin: 0px;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+/*
+not sure what most of these do, except text align 
+ok text align and item align are realated
+
+*/
+
+.container {
+  width: 180%;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 {
+  width: 5%;
+  height: 2em;
+  display: flex;
+  flex-direction: column; /* this makes the shit align in a column */
+  float:right;
+}
+
+/* "a" is the prefix thing used for links */
+
+a {
+  text-decoration: none;
+  color: #ededed;
+  display: block;
+  margin: .2em 0em;
+}
+
+a:hover {
+  color: #d56038;
+}
