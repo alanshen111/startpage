@@ -8,32 +8,47 @@
       shrink-to-fit=no">
     <meta hyyp-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="text.css">
-    <link rel="stylesheet" href="image.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="images.js"></script>
+
     <title>start here</title>
 
   </head>
 
-  <body>
-
+  <body onload="get_image()"> <!-- gives me an image on startup -->
 
     <div class="container">
 
-        <p class="line anim-typewriter">welcome back, alan ‎ ‎ ‎</p>
+      <div class="container_title">
 
-    </div>
+        <p class= "line anim-typewriter"> welcome back, alan ‎ ‎ ‎</p>
 
+      </div>
 
-    <div class="container2">
+      <div class="container_img">
 
-        <a href="https://mail.google.com/mail/" target="_blank">gmail</a>
-        <a href="https://drive.google.com/drive/my-drive" target="_blank">drive</a>
-	<a href="https://canvas.ubc.ca/" target="_blank">canvas</a>
-        <a href="https://ssc.adm.ubc.ca/sscportal/servlets/SRVSSCFramework" target="_blank">ssc</a>
-        <a href="https://webmail.student.ubc.ca/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.student.ubc.ca%2fowa%2f" target="_blank">ubcmail</a>
+        <img id="image_bg"/>
+        
+      </div>
+
+      <div class="container_button">
+
+        <button onclick="get_image()"></button>
+        
+      </div>
+
+      <div class="container_links">
+
+          <a href="https://mail.google.com/mail/" target="_blank">gmail</a>
+          <a href="https://drive.google.com/drive/my-drive" target="_blank">drive</a>
+          <a href="https://canvas.ubc.ca/" target="_blank">canvas</a>
+          <a href="https://ssc.adm.ubc.ca/sscportal/servlets/SRVSSCFramework" target="_blank">ssc</a>
+          <a href="https://webmail.student.ubc.ca/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.student.ubc.ca%2fowa%2f" target="_blank">ubcmail</a>
+
+      </div>
 
     </div>
 
   </body>
+
 </html>

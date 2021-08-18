@@ -1,0 +1,114 @@
+
+body {
+  margin:0 auto; /* gets rid of that tiny margin */
+  background-color: #000;
+  position: fixed;
+  width: 100%; /* affects entire layout */
+  height: 100%;
+
+  font-family: 'Anonymous Pro', monospace; /*default text*/
+	font-size: 120%;
+  color: #ededed;
+
+  
+}
+
+/* -- CLASSES -- */
+
+img {
+  width : auto; /*to preserve the aspect ratio of the image*/
+  height: 100vh; /* 100% of browser */
+}
+
+button {
+
+  height: 100vh;
+  width: 100vh;
+  background: transparent; /*huge invisible button*/
+  border: none !important;
+
+}
+
+/* -- CONTAINERS -- */
+
+.container{
+  display:flex; /*doesn't do much right now*/
+  
+}
+
+.container_title {
+
+  position: fixed;
+  left: 88em;
+  top:30px;
+
+}
+
+.container_links {
+  position: fixed;
+  right:0px;
+  top:100px;
+  width: 10%; /* only affects hitbox */
+}
+
+.container_img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  ;
+}
+
+.container_button {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  ;
+}
+
+/* -- HYPERLINKS --  */
+
+a {
+  text-decoration: none;
+  color: #ededed;
+  display: block;
+  margin: .2em 0em;
+}
+
+a:hover {
+  color: rgb(187, 187, 187);
+}
+
+/* -- TYPEWRITER ANIMATION -- */
+
+.line {
+	
+	border-right: 2px solid #ededed; /* this is the line */
+	font-size: 140%;
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translateX(-100%); /*keeps line static somehow */
+
+}
+
+.anim-typewriter {
+	animation: typewriter 1s steps(19) 1s 1 normal both, /* time per step, steps, start time, repeats */
+	blinkTextCursor 750ms steps(19) infinite normal;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 10.3em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: #fff;
+		}
+	to {
+		border-right-color: transparent;
+	}
+}
